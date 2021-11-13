@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="header-area">
+            <nav class="nav">
+                <div class="brand">
+                    <a href="#">
+                        <img src="{% static 'images/logo.png' %}" alt="" style="width: auto; height: auto; max-width: 256px; max-height: 200px;">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li class="link-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#">Tours</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#">Advantages</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {% block body %}{% endblock body %}
+</body>
+</html>
